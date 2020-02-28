@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.left-section {
+  background-image: url('source/bg.jpg');
+  background-size: cover;
+  width: 325px;
+  padding: 0.8em;
+}
+
+.ntv-header {
+  display: flex;
+}
+
+.onair {
+  color: #fff;
+  margin-left: 0.7em;
+  margin-bottom: 3em;
+  text-transform: uppercase;
+}
+
+.onair__header {
+  font-size: 0.7em;
+}
+
+.onair__text {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.onair__img {
+  width: 320px;
+  margin-bottom: 1em;
+}
+
+.right-section {
+  background: #1d1d1d;
+  color: rgb(170, 168, 168);
+}
