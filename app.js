@@ -22,7 +22,7 @@ function showNews() {
   getNews().then(data => {
     showMainNews(data.mainNews);
     showAllNews(data.allNews);
-  });
+  }).catch(err => console.log(err));
 }
 
 // function to show main news
@@ -62,10 +62,9 @@ function showAllNews(news) {
 document.querySelector('.news-container').addEventListener('click', showSingleArticle);
 
 function showSingleArticle(e){
-  console.log(e.target);
   getNews().then(data => {
     showArticle(data.allNews);
-  });
+  }).catch(err => console.log(err));
   
   function showArticle(news) {
     news.forEach(i => {
@@ -74,7 +73,7 @@ function showSingleArticle(e){
         <div class="article">
           <div class="article__backBtn">
             <div class="backBtn">
-              <img src="/source/back.png" alt="back">
+              <img src="source/back.png" alt="back">
               <div class="backBtn__text">назад</div>
             </div>
           </div>
