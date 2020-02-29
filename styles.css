@@ -1,11 +1,11 @@
 body {
   display: flex;
   font-family: 'Source Sans Pro', sans-serif;
+  height: 100%;
 }
 
 .left-section {
   background-image: url('source/bg.jpg');
-  background-size: cover;
   width: 325px;
   padding: 0.8em;
 }
@@ -38,4 +38,106 @@ body {
 .right-section {
   background: #1d1d1d;
   color: rgb(170, 168, 168);
+  width: 100%;
+  padding: 0 2em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9em;
+  border-bottom: 3px solid rgb(2, 151, 2);
+  text-transform: uppercase;
+}
+
+.navbar-item {
+  padding: 0.5em;
+  transition: 0.5s;
+  margin: 0.2em 1em 0.2em 0;
+}
+
+.navbar-item:last-child {
+  margin-left: auto;
+}
+
+.navbar-item:hover {
+  background: rgb(2, 151, 2);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.main-header {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: rgb(2, 151, 2);
+  margin-top: 1em;
+}
+
+.main-news {
+  display: flex;
+  flex-wrap: wrap;
+  background: #363535a2;
+  border-radius: 10px;
+}
+
+.main-news__item {
+  margin: 0;
+  width: 10em;
+  padding: 1em;
+  font-size: 1.1em;
+  transition: 0.5s;
+  height: auto;
+}
+
+.main-news__item:hover {
+  background: #7e7a7aa2;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.all-news-header {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 2em 0;
+}
+
+.news-article {
+  display: flex;
+  align-items: flex-start;
+  transition: 0.5s;
+  padding: 1em;
+}
+
+.news-article__time {
+  color: rgb(170, 168, 168);
+}
+
+.news-article__image {
+  margin: 0 1em 0 3em;
+}
+
+.news-article__image img {
+  width: 300px;
+}
+
+.news-article__header {
+  margin: 0;
+  text-transform: uppercase;
+  color: rgb(2, 151, 2);
+}
+
+.news-article__text {
+  font-size: 1.2em;
+  margin: 0.3em 0;
+}
+
+.news-article:hover {
+  background: rgba(71, 68, 68, 0.5);
+  color: #fff;
+  border-top: 2px solid rgb(83, 82, 82);
+  border-bottom: 2px solid rgb(83, 82, 82);
+  background-image: url("source/ok.png");
+  background-repeat: no-repeat;
+  background-position: 1% 90%;
 }
